@@ -5,15 +5,15 @@ const Navbar = () => {
   const navLinks = [
     {
       name: "Asanas",
-      Link: "",
+      link: "/asanas", // Example path, replace it with the actual path
     },
     {
       name: "Homecines",
-      link: "",
+      link: "/homecines", // Example path, replace it with the actual path
     },
     {
       name: "TimeTable",
-      link: "",
+      link: "/timetable", // Example path, replace it with the actual path
     },
   ];
   return (
@@ -28,8 +28,9 @@ const Navbar = () => {
       <div className="navLinks col-span-8  flex justify-around items-center ">
         {navLinks.map((item, index) => {
           return (
-            <NavLink to={""}
-              className="bg-teal-500 rounded-full flex items-center justify-center h-[70%] w-[20%] hover:bg-[#57A686] transition-all duration-100 ease-in-out"
+            <NavLink
+              to={item.link}
+              className="bg-teal-500 rounded-full flex items-center justify-center h-[70%] w-[20%] hover:bg-[#1D895E] transition-all duration-100 ease-in-out"
               key={index}
             >
               <span className="font-mono text-xl font-[500]">{item.name}</span>
