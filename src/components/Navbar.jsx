@@ -17,7 +17,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="h-[12vh] w-full bg-[#A3E7FC] grid grid-cols-12">
+    <div className="h-[12vh] w-full bg-[#5BC0EB] grid grid-cols-12">
       <div className="logo col-span-4 flex justify-center items-center">
         <div className="image h-[80%] w-1/2  rounded-md flex justify-center items-center ">
           <span className="font-mono text-2xl hover:scale-125 transition-all duration-100">
@@ -30,7 +30,7 @@ const Navbar = () => {
           return (
             <NavLink
               to={item.link}
-              className="bg-teal-500 rounded-full flex items-center justify-center h-[70%] w-[20%] hover:bg-[#1D895E] transition-all duration-100 ease-in-out"
+              className="bg-blue-300 rounded-md flex items-center justify-center h-[60%] w-[20%] hover:bg-blue-200 transition-all duration-100 ease-in-out"
               key={index}
             >
               <span className="font-mono text-xl font-[500]">{item.name}</span>

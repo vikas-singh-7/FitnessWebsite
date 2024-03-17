@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
+import Information from "./components/Information";
 
 const App = () => {
   return (
     <div className="bg-zinc-800 h-screen">
       <Navbar />
       <LandingPage />
+      <Information />
     </div>
   );
 };
