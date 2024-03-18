@@ -4,20 +4,13 @@ const Information = () => {
   return (
     <div className="h-screen bg-[#FF6978] p-5 flex justify-center items-center">
       <div className="inner bg-[#8FB8DE] h-[100%] w-full rounded-xl grid grid-cols-12 gap-5 p-5 grid-rows-12">
-        <div className="col-span-12  row-span-4 rounded-md p-3 flex justify-center items-center">
-          <p className="text-2xl font-mono subpixel-antialiased ">
-            Health refers to a state of complete physical, mental, and social
-            well-being, not merely the absence of disease or infirmity.It is a
-            positive concept emphasizing social and personal resources, as well
-            as physical capacities.Mental health is an integral component of
-            health, and it is more than just the absence of mental disorders or
-            disabilities.Health is a resource for everyday life, not the
-            objective of living, emphasizing social and personal resources, as
-            well as physical capacities.
-          </p>
+        <div className="col-span-12  row-span-4 p-4 ">
+          <div className="heading text-[3rem] font-sans mt-6">
+            Lets know ourself
+          </div>
+          <div className="border-t-[1px] border-zinc-700 mt-8"></div>
         </div>
-
-        <div className="col-span-12 row-span-8 grid grid-cols-12  bg-yellow-400  rounded-xl gap-5 p-5   ">
+        <div className="col-span-12 row-span-8 grid grid-cols-12  bg-yellow-400  rounded-xl gap-5 p-5  overflow-hidden ">
           <div className="col-span-6 overflow-hidden bg-violet-500 rounded-md  bg-center bg-cover bg-no-repeat bg-[url('yogamain4.jpeg')] "></div>
           <div className="col-span-6 bg-violet-500 rounded-md ">
             <div className="pt-5">
