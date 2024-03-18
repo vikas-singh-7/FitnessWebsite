@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import Information from "./components/Information";
+import Slider from "./components/Slider";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <LandingPage />
       <Information />
+      {/* <Slider /> */}
     </div>
   );
 };

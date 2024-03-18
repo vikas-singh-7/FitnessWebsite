@@ -16,22 +16,27 @@ const LandingPage = () => {
           </div>
           {/* <hr className="border-1 border-black" /> */}
           <div className="paraimage  h-[50%] mt-4 rounded-md grid grid-cols-12 gap-5 p-5">
-            <motion.div
+            <div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
               className=" col-span-6 rounded-lg bg-[url('yoga4.webp')] bg-cover bg-top bg-no-repeat bg-h-full bg-w-full bg-white"
-            ></motion.div>
-            <motion.div
+            ></div>
+            <div
               initial={{ width: 0 }}
               animate={{ width: "" }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
               className=" col-span-6 rounded-lg bg-[url('yoga3.webp')] bg-cover  bg-center bg-no-repeat bg-h-full bg-w-full bg-white"
-            ></motion.div>
+            ></div>
           </div>
         </div>
-        <div className="h-[80%] w-1/2 ">
-          <div className="image bg-[url('yogamain.avif')] h-full w-full bg-cover bg-no-repeat bg-center rounded-xl"></div>
+        <div className="h-[80%] w-1/2 overflow-hidden ">
+          <motion.div
+            initial={{ x: -1000 }}
+            animate={{ x: 1 }}
+            transition={{ duration: 1 }}
+            className="image bg-[url('yogamain.avif')] h-full w-full bg-cover bg-no-repeat bg-center rounded-xl"
+          ></motion.div>
         </div>
       </div>
 
