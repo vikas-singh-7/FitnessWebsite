@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const CardChilds = ({ image, desc, desc2 }) => {
   return (
-    <div className="h-full w-full hover:scale-105 bg-[#565554]  flex rounded-2xl  p-2 flex-col gap-5 transition-all duration-100 ease-in-out">
+    <div className="h-full w-full hover:scale-105 bg-[#565554]  flex rounded-2xl  p-2 flex-col gap-5 transition-all duration-[300ms] ease-in-out">
       <div className="h-[60%] w-full  overflow-hidden rounded-xl flex">
         <img src={image} alt="" height="100%" className="h-full w-full" />
       </div>

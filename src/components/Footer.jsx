@@ -42,7 +42,9 @@ const Footer = () => {
               {contacts.map((item) => {
                 return (
                   <span key={item.name} className="hover:text-black">
-                    <a href={item.link}>{item.name}</a>
+                    <a href={item.link} target="blank">
+                      {item.name}
+                    </a>
                   </span>
                 );
               })}

@@ -5,12 +5,12 @@ const Cards = () => {
   return (
     <div className="h-screen bg-[#2E86AB] flex justify-center items-center p-5">
       <div className=" relative bg-violet-400 rounded-xl h-full w-full flex justify-around items-center p-5">
-        <div className="desc  absolute top-0 w-full text-4xl px-10 font-serif py-2">
+        <div className="desc  absolute top-0 w-full text-4xl px-10 font-serif py-4">
           PICK YOUR CARD
-          <hr className="mt-2" />
+          <hr className="mt-6" />
         </div>
 
-        <div className="flex justify-center items-center h-[92%] w-[full]">
+        <div className="flex justify-center items-center h-[92%] w-[full] mt-12">
           <div className="h-[95%] w-[30%]  rounded-xl flex p-4 justify-center items-center">
             <CardChilds
               desc2={"Asanas"}
