@@ -69,7 +69,11 @@ const Navbar = () => {
           return (
             <NavLink
               to={item.link}
-              className="bg-blue-300 rounded-md flex items-center justify-center h-[60%] w-[20%] hover:bg-blue-200 transition-all duration-100 ease-in-out"
+              className={({ isActive }) => {
+                return `  ${
+                  isActive && "text-white"
+                } flex items-center justify-center  hover:text-white transition-all duration-100 ease-in-out`;
+              }}
               key={index}
             >
               <span className="font-mono text-xl font-[500]">{item.name}</span>
@@ -84,3 +88,5 @@ const Navbar = () => {
 export default Navbar;
 
 // ohhh okay okay now its start to make sense , so we store the prev scroll pos so that when we scroll up or down , lets say we are bottom and now prev scroll is larger lets say 10 and we scroll up now currentscroll changes it gets 9 lets say , now 9 is less then 10 and now we say that of currentscroll<prev navbar should bhi visible , (prev>curresntpos) return true if visible is true then navbar will be displayed and if we scroll down the prev scroll was lets say 5 and we scroll down and now currntscroll become 7 now the condition prev>current became false and it return false thats why visible gets false and navbar get hided....
+
+// so , when we use navlink and we want to use its isActive param we do like classname = {({isActive}=>{return(`classes ${isActive&&"text-green"}`)})}
