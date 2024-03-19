@@ -4,6 +4,7 @@ import LandingPage from "./components/LandingPage";
 import Information from "./components/Information";
 import Slider from "./components/Slider";
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Information />
       {/* <Slider /> */}
       <Cards />
+      <Footer />
     </div>
   );
 };

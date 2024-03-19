@@ -10,7 +10,7 @@ const Information = () => {
           </div>
           <div className="border-t-[1px] border-zinc-700 mt-8"></div>
         </div>
-        <div className="col-span-12 row-span-8 grid grid-cols-12  bg-yellow-400  rounded-xl gap-5 p-5  overflow-hidden ">
+        <div className="col-span-12 row-span-12 grid grid-cols-12    rounded-xl gap-5 p-5  overflow-hidden ">
           <div className="col-span-6 overflow-hidden bg-violet-500 rounded-md  bg-center bg-cover bg-no-repeat bg-[url('yogamain4.jpeg')] "></div>
           <div className="col-span-6 bg-violet-500 rounded-md ">
             <div className="pt-5">
