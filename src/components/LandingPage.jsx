@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 
 const LandingPage = () => {
   return (
-    <div className="h-[88vh] bg-[#967AA1] p-5 flex flex-col space-y-2">
+    <div
+      data-scroll
+      data="true"
+      data-scroll-speed="-.3"
+      className="h-[88vh] mt-16 bg-[#967AA1] p-5 flex flex-col space-y-2"
+    >
       <div className="child rounded-xl bg-[#D5C6E0] h-full flex gap-10 justify-center items-center px-5">
         <div className="h-[80%] w-1/2  rounded-md p-2 flex flex-col ">
           <div className="quote h-1/2 rounded-md overflow-hidden w-full font-mono px-5">

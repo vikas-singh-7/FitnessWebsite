@@ -32,8 +32,8 @@ const Footer = () => {
           <div className="text-white text-4xl  font-serif">Rajput Vikas</div>
         </div>
       </div>
-      <div className="h-full w-1/2 bg-orange-400 grid grid-cols-1 grid-rows-12">
-        <div className=" row-span-12 bg-red-500 p-5 flex flex-col ">
+      <div className="h-full w-1/2  grid grid-cols-1 grid-rows-12">
+        <div className=" row-span-12 rounded-xl bg-red-500 p-5 flex flex-col ">
           <div className="firt h-[30%]  text-white flex justify-start items-center text-8xl font-serif">
             Contact Me
           </div>
@@ -52,14 +52,18 @@ const Footer = () => {
             <div className="col-span-6 -mt-[100px]  px-5 py-3 row-span-1">
               {address.map((item, index) => (
                 <span key={index}>
-                  <div className="flex flex-col text-xl font-serif">{item}</div>
+                  <div className="flex hover:text-black flex-col text-xl font-serif">
+                    {item}
+                  </div>
                 </span>
               ))}
             </div>
             <div className="col-span-6 -mt-[100px]  px-5 py-3 row-span-1">
               {education.map((item, index) => (
                 <span key={index}>
-                  <div className="flex flex-col text-xl font-serif">{item}</div>
+                  <div className=" hover:text-black flex flex-col text-xl font-serif">
+                    {item}
+                  </div>
                 </span>
               ))}
             </div>

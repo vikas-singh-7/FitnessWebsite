@@ -2,7 +2,12 @@ import React from "react";
 
 const Information = () => {
   return (
-    <div className="h-screen bg-[#FF6978] p-5 flex justify-center items-center">
+    <div
+      data-scroll
+      data="true"
+      data-scroll-speed="-.1"
+      className="h-screen bg-[#FF6978] p-5 flex justify-center items-center"
+    >
       <div className="inner bg-[#8FB8DE] h-[100%] w-full rounded-xl grid grid-cols-12 gap-5 p-5 grid-rows-12">
         <div className="col-span-12  row-span-4 p-4 ">
           <div className="heading text-[3rem] font-sans mt-6">
