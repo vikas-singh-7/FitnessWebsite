@@ -13,6 +13,7 @@ const Cards = () => {
         <div className="flex justify-center items-center h-[92%] w-[full] mt-12">
           <div className="h-[95%] w-[30%]  rounded-xl flex p-4 justify-center items-center">
             <CardChilds
+              links={"/asanas"}
               desc2={"Asanas"}
               image={"yogaasanas.webp"}
               desc={` Asana is a Sanskrit term which is often translated as “posture” or
@@ -21,6 +22,7 @@ const Cards = () => {
           </div>
           <div className="h-[95%] w-[30%]  rounded-xl flex p-4">
             <CardChilds
+              links={"/homecines"}
               desc2={"Home Remedies"}
               image={"homecines.webp"}
               desc={`Many home remedies exist that may help treat a variety of things, such as colds, inflammation, and pain.`}
@@ -28,6 +30,7 @@ const Cards = () => {
           </div>
           <div className="h-[95%] w-[30%]  rounded-xl flex p-4">
             <CardChilds
+              links={"/timetable"}
               desc2={"Timetable"}
               image={"timetable.webp"}
               desc={"Find a timetable , which fits according to your living"}

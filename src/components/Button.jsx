@@ -1,10 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Button = ({ children }) => {
+const Button = ({ children, routelink }) => {
+  const navigate = useNavigate();
   return (
-    <div className="flex justify-center items-center w-[40%] h-full rounded-md bg-[#EDE5A6] text-lg font-mono hover:bg-[#95AFBA] transition-all duration-100 ease-in-out">
-      <button>{children}</button>
-    </div>
+    <button
+      className="flex justify-center items-center w-[40%] h-full rounded-md bg-[#EDE5A6] text-lg font-mono hover:bg-[#95AFBA] transition-all duration-100 ease-in-out"
+      onClick={() => {
+        navigate(routelink);
+      }}
+    >
+      {children}
+    </button>
   );
 };
 
