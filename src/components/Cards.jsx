@@ -1,7 +1,10 @@
 import React from "react";
 import CardChilds from "./CardChilds";
+import { useNavigate } from "react-router-dom";
 
 const Cards = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="h-screen bg-[#2E86AB] flex justify-center items-center p-5">
       <div className=" relative bg-violet-400 rounded-xl h-full w-full flex justify-around items-center p-5">
@@ -11,7 +14,12 @@ const Cards = () => {
         </div>
 
         <div className="flex justify-center items-center h-[92%] w-[full] mt-12">
-          <div className="h-[95%] w-[30%]  rounded-xl flex p-4 justify-center items-center">
+          <div
+            className="h-[95%] w-[30%]  rounded-xl flex p-4 justify-center items-center"
+            onClick={() => {
+              navigate("/asanas");
+            }}
+          >
             <CardChilds
               links={"/asanas"}
               desc2={"Asanas"}
@@ -20,7 +28,12 @@ const Cards = () => {
           “pose.”`}
             />
           </div>
-          <div className="h-[95%] w-[30%]  rounded-xl flex p-4">
+          <div
+            className="h-[95%] w-[30%]  rounded-xl flex p-4"
+            onClick={() => {
+              navigate("/homecines");
+            }}
+          >
             <CardChilds
               links={"/homecines"}
               desc2={"Home Remedies"}
@@ -28,7 +41,12 @@ const Cards = () => {
               desc={`Many home remedies exist that may help treat a variety of things, such as colds, inflammation, and pain.`}
             />
           </div>
-          <div className="h-[95%] w-[30%]  rounded-xl flex p-4">
+          <div
+            className="h-[95%] w-[30%]  rounded-xl flex p-4"
+            onClick={() => {
+              navigate("/timetable");
+            }}
+          >
             <CardChilds
               links={"/timetable"}
               desc2={"Timetable"}
