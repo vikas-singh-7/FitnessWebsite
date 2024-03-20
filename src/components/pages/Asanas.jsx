@@ -1,7 +1,11 @@
 import React from "react";
 import AsanCard from "../AsanCard";
+import { useEffect } from "react";
 
 const Asanas = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
+  }, []);
   return (
     <div className="h-auto bg-zinc-700 mt-[4rem] ">
       <div className="grid grid-cols-11 gap-1 bg-zinc-700 grid-rows-5 h-auto">
@@ -10,12 +14,15 @@ const Asanas = () => {
             <div className="bg-[url('tarasan.jpg')] h-full w-full bg-cover bg-center"></div>
           </div>
         </div>
-        <div className="col-span-6 bg-zinc-700 row-span-1 flex justify-center items-center">
-          <h2 className="text-[4rem] text-white leading-none font-serif capitalize ">
+        <div className="col-span-6 bg-zinc-700 row-span-1 flex flex-col justify-center items-center">
+          <h1 className="text-[4rem] text-white leading-none font-serif capitalize ">
+            Begineer's ? Dont worry
+          </h1>
+          <h2 className=" mt-10 text-[4rem] text-white leading-none font-serif capitalize ">
             some easy asanas...
           </h2>
         </div>
-        <div class="col-span-3 bg-[#34c6cd] row-span-1   flex items-center justify-center">
+        <div className="col-span-3 bg-[#34c6cd] row-span-1 h-full w-full   flex items-center justify-center">
           <AsanCard
             heading={"1. Child's Pose (Balasana)"}
             para={

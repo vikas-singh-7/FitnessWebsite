@@ -39,3 +39,26 @@ const App = () => {
 };
 
 export default App;
+
+//chat on click on cards i am sucessfully navigating to routes pages but i want that when i visit my route page i will land on top of page its landing on mid
+
+// solution To ensure that when you navigate to a route page, it lands at the top of the page, you can use useEffect hook in your route components to scroll to the top of the page whenever the component mounts. Here's how you can modify your route components to achieve this:
+
+// import React, { useEffect } from "react";
+
+// const YourRouteComponent = () => {
+//   useEffect(() => {
+//     window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
+//   }, []);
+
+//   // Your component JSX
+//   return (
+//     // Your component JSX here
+//   );
+// };
+
+// export default YourRouteComponent;
+
+//By using window.scrollTo(0, 0) inside useEffect with an empty dependency array ([]), you ensure that it only runs once when the component mounts, effectively scrolling to the top of the page whenever the component is rendered.
+
+// You would apply this modification to each of your route components (Asanas, HomeCines, Timetable, etc.) where you want the page to scroll to the top upon navigation.
