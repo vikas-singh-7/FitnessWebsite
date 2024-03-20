@@ -41,7 +41,7 @@ const Footer = () => {
             <div className="col-span-12  p-5 flex flex-col  font-serif text-xl">
               {contacts.map((item) => {
                 return (
-                  <span key={item.name} className="hover:text-black">
+                  <span key={item.name} className="hover:text-black ">
                     <a href={item.link} target="blank">
                       {item.name}
                     </a>
