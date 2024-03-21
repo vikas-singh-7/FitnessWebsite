@@ -1,8 +1,11 @@
 import React from "react";
 import AsanCard from "../AsanCard";
 import { useEffect } from "react";
+import CardChilds from "../CardChilds";
+import { useNavigate } from "react-router-dom";
 
 const Asanas = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
   }, []);
@@ -135,6 +138,34 @@ const Asanas = () => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-zinc-700 h-[100vh] flex gap-2 p-2 justify-around items-center ">
+        <div
+          onClick={() => {
+            navigate("/homecines");
+          }}
+          className="w-[50%] h-full overflow-hidden rounded-lg"
+        >
+          <CardChilds
+            links={"/homecines"}
+            desc2={"Home Remedies"}
+            image={"homecines.webp"}
+            desc={`Many home remedies exist that may help treat a variety of things, such as colds, inflammation, and pain.`}
+          />
+        </div>
+        <div
+          onClick={() => {
+            navigate("/timetable");
+          }}
+          className="w-[50%] h-full overflow-hidden rounded-lg"
+        >
+          <CardChilds
+            links={"/timetable"}
+            desc2={"Timetable"}
+            image={"timetable.webp"}
+            desc={"Find a timetable , which fits according to your living"}
+          />
         </div>
       </div>
     </div>

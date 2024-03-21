@@ -55,7 +55,7 @@ const Navbar = () => {
     <div
       className={` ${
         visible ? "" : "hidden"
-      } fixed top-0 z-[2] h-[12vh] w-full  bg-violet-500 backdrop-blur-md grid grid-cols-12`}
+      } fixed top-0 z-[2] h-[12vh] w-full bg-violet-400 backdrop-blur-md grid grid-cols-12`}
     >
       <div className="logo col-span-4 flex justify-center items-center">
         <div className="image h-[80%] w-1/2  rounded-md flex justify-center items-center ">

@@ -14,7 +14,7 @@ const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
-    <div className="bg-zinc-800 h-screen">
+    <div className="bg-zinc-800 h-auto">
       <Navbar />
       <Routes>
         <Route

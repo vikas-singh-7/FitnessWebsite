@@ -12,7 +12,7 @@ const CardChilds = ({ image, desc, desc2, links }) => {
           {" "}
           <h1 className="text-xl text-white font-serif">{desc2}</h1>
         </div>
-        <div className="bg-purple-500 h-[40%] rounded-md p-1 ">
+        <div className="bg-purple-500 h-[40%] rounded-md p-1 flex justify-center items-center ">
           <h2 className="text-lg font-mono text-white leading-none">{desc}</h2>
         </div>
         <div className=" h-[25%] ">
