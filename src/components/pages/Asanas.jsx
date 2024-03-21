@@ -7,8 +7,8 @@ const Asanas = () => {
     window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
   }, []);
   return (
-    <div className="h-auto bg-zinc-700 mt-[4rem] ">
-      <div className="grid grid-cols-11 gap-1 bg-zinc-700 grid-rows-5 h-auto">
+    <div className="bg-zinc-700 mt-[4rem] ">
+      <div className="grid grid-cols-11 gap-1 bg-zinc-700 grid-rows-5">
         <div className="col-span-5 bg-[#fcc151] row-span-5 grid grid-cols-1 grid-rows-1 ">
           <div className="">
             <div className="bg-[url('tarasan.jpg')] h-full w-full bg-cover bg-center"></div>
@@ -22,7 +22,7 @@ const Asanas = () => {
             some easy asanas...
           </h2>
         </div>
-        <div className="col-span-3 bg-[#34c6cd] row-span-1 h-full w-full   flex items-center justify-center">
+        <div className="col-span-3 bg-[#34c6cd] row-span-1 h-full w-full    flex items-center justify-center">
           <AsanCard
             heading={"1. Child's Pose (Balasana)"}
             para={
@@ -93,6 +93,48 @@ const Asanas = () => {
             }
             image={"asan9.jpg"}
           />
+        </div>
+      </div>
+      <div className="h-full flex p-2 gap-2  ">
+        <div className="h-[80vh] w-[40%] rounded-md bg-[#697A21]">
+          <div className="content p-4 flex flex-col ">
+            <h2 className="text-[4rem] text-white font-serif">
+              What is Yoga ?{" "}
+            </h2>
+            <h3 className="text-[4rem] text-white font-serif">
+              And Why Yoga ?
+            </h3>
+          </div>
+          <div className="h-[50vh] overflow-hidden rounded-md">
+            <div className="h-full w-full hover:scale-105 transition-all duration-200 ease-linear">
+              <img src="ancient3.avif" alt="" className="h-full w-full" />
+            </div>
+          </div>
+        </div>
+        <div className="h-[80vh] w-[60%] rounded-md bg-[#3E363F] text-white">
+          <div className="h-full w-full grid grid-rows-10">
+            <div className="row-span-6  flex justify-center items-center">
+              <h2 className="text-[2rem] font-serif p-1">
+                Yoga is a physical, mental and spiritual practice that
+                originated in ancient India. First codified by the sage
+                Patanjali in his Yoga Sutras around 400 C.E, the practice was in
+                fact handed down from teacher to student long before this text
+                arose. Traditionally, this was a one-to-one transmission, but
+                since yoga became popular in the West in the 20th century, group
+                classes have become the norm.
+              </h2>
+            </div>
+            <div className="row-span-4  p-2">
+              <h2 className="text-[2rem]">
+                “The help which tends to make us spiritually strong is the
+                highest help, next to it comes intellectual help and after that
+                comes physical help.”
+              </h2>
+              <p className="text-xl">
+                ― Swami Vivekananda, Karma Yoga: the Yoga of Action
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

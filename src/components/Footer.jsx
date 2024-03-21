@@ -21,15 +21,15 @@ const Footer = () => {
     <div className="h-screen  p-5 bg-zinc-800 flex gap-5 ">
       <div className="h-full w-1/2  grid grid-cols-1 grid-rows-12">
         <div className=" row-span-10 p-10 flex flex-col ">
-          <div className="firt h-[30%] text-white flex justify-start items-center text-8xl font-serif">
+          <div className="firt h-[30%] text-white flex justify-start items-center text-[6rem] font-serif">
             Lift YourSelf ,
           </div>
-          <div className="firt h-[30%] text-white flex ml-5 items-center text-8xl fontserif">
+          <div className="firt h-[30%] text-white flex ml-5 items-center text-[6rem] fontserif">
             a little Up....
           </div>
         </div>
         <div className=" row-span-2 flex justify-start items-center  font-serif px-10">
-          <div className="text-white text-4xl  font-serif">Rajput Vikas</div>
+          <div className="text-white text-[3rem]  font-serif">Rajput Vikas</div>
         </div>
       </div>
       <div className="h-full w-1/2  grid grid-cols-1 grid-rows-12">

@@ -29,10 +29,6 @@ const App = () => {
         <Route path="/homecines" element={<Home />} />
         <Route path="/timetable" element={<Timetable />} />
       </Routes>
-      {/* <LandingPage />
-      <Information />
-      <Cards /> */}
-
       <Footer />
     </div>
   );
